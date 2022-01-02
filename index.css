@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: black;
+    background-image:url("https://cdn.wallpapersafari.com/80/31/8uLjyU.jpg");
+    font-family: cursive;
+}
+
+/* :root{
+    --navbar-height:59px;
+} */
+/* Navigation-Bar */
+#navbar{
+    display:flex;
+    background-color:rgb(64 57 40 / 33%);
+    /* position: absolute;; */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+/* Navigation-Bar : Button*/
+
+/* Navigation-Bar : ul*/
+#navbar ul{
+    display:flex;
+
+}
+/* #navbar::before{
+    content:"";
+    background-color: rgba(206, 36, 36, 0.37);
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+} */
+#navbar li{
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+#navbar ul li a{
+    color:black;
+   display:block;
+   padding:2px 75px 2px 2px;
+   margin:1px 2px 2px 2px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:rgb(36, 32, 32);
+    background-color: white;
+}
+/* Home Section */
+#home img{
+    width: 100%;
+    height: 90%;
+    background-repeat: no-repeat;
+    /* background: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fashion-sale-banner-template-design-9db9afa9dc48742dd1f63f4b3e970eb1_screen.jpg?ts=1605628683"); */
+    position:relative;
+    /* width:auto; */
+}
+/* .Section-2{
+    display: flex;
+    justify-content: flex-start;
+}
+.Section-2 img{
+    height: 45%;
+    width: 25%;
+
+}
+.Section-3 {
+    display: flex;
+    justify-content: flex-start;
+}
+.Section-2 img1{
+    height: 45%;
+    width: 25%;
+
+}
+.Section-2 img2{
+    height: 45%;
+    width: 75%;
+
+} */
+.section-1 {
+    display: flex;
+    /* flex-wrap: wrap;  */
+    flex-direction: row;
+
+}
+.section-2{
+    display: flex;
+}
+
+/* .section-1 div{
+    height:200px;
+    width:25%;
+    border: 2px solid black;
+} */
+.four-img1{
+    height:200px;
+    width:25%;
+    border: 2px solid black;
+    background-image: url("https://rukminim1.flixcart.com/image/800/960/kl6wx3k0/t-shirt/y/n/i/s-bbt-try-this-original-imagydarhsryeahn.jpeg?q=50");
+    background-size: 100% 100%;
+    transition: transform .2s;
+}
+.four-img1:hover {
+    transform: scale(1.5);
+    /* border: 2px solid white; */
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.four-img2{
+    height:200px;
+    width:25%;
+    /* border: 2px solid white; */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/bikai-d5ee5/o/images%2Fc050b7da-26f2-479b-bcff-a5a6ab925c6b?alt=media&token=7cfb9433-5de3-4063-bcbf-9ac46d8f68c7");
+    object-fit: contain;
+    background-size: 100% 100%;
+    transition: transform .2s;
+    border: 2px solid black;
+}
+.four-img2:hover {
+    border: 2px solid white;
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.four-img3{
+    height:200px;
+    width:25%;
+    /* border: 2px solid black; */
+    /* background-image: url("https://www.businessobserverfl.com/sites/default/files/201678_standard.jpeg"); */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/bikai-d5ee5/o/images%2Fc1758eee-5978-4c1b-9c59-1a1546ee2f76?alt=media&token=c6288f51-f2d8-4e3f-be1d-d1812237d122");
+    /* background-size: cover; */
+   /* background-repeat: no-repeat; */
+   background-size: 100% 100%;
+   border: 2px solid black;
+   transition: transform .2s;
+   
+}
+.four-img3:hover {
+    border: 2px solid white;
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.four-img4{
+    height:200px;
+    width:25%;
+    border: 2px solid black;
+    /* border: 2px solid black; */
+    /* background-image: url("https://www.businessobserverfl.com/sites/default/files/201678_standard.jpeg"); */
+    background-image: url("https://us.123rf.com/450wm/peshkov/peshkov1706/peshkov170600691/81113175-wooden-hanger-with-empty-black-t-shirt-hanging-on-dark-brick-background-retail-concept-mock-up-3d-re.jpg?ver=6");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: transform .2s;
+    /* object-fit: fill; */
+    /* object-fit: scale-down; */
+}
+.four-img4:hover {
+    border: 2px solid white;
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.two-img{
+    flex:1;
+    height:400px;
+    width:50%;
+    /* padding:20px; */
+    border: 2px solid black;
+    background-image:url("https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: transform .2s;
+}
+.two-img:hover {
+    transform: scale(1.1); 
+    border:5px solid white;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+.two-img2{
+    flex:2;
+    height:400px;
+    width:50%;
+    /* padding:20px; */
+    border: 2px solid black;
+    background-image:url("https://media.istockphoto.com/photos/new-fashion-in-modern-shopping-mall-picture-id692122162");
+    background-size: 100% 100%;
+    transition: transform .2s;
+     
+   
+}
+.two-img2:hover {
+    transform: scale(1.1);
+    border:5px solid white;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.Sectwo-img{
+    flex:4;
+    height:400px;
+    width:50%;
+    /* padding:20px; */
+    border: 2px solid black;
+    background-image:url("https://image.freepik.com/free-vector/new-collection-banner-template_1361-1325.jpg");
+    /* background-image:url("https://i.pinimg.com/736x/b5/10/5c/b5105c9dd9b1aad3440b826e178f60a8.jpg") */
+    background-size: 100% 100%;
+    transition: transform .2s;
+}
+.Sectwo-img:hover {
+    transform: scale(1.1);
+    border:5px solid white;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.Sectwo-img2{
+    flex:1;
+    height:400px;
+    width:50%;
+    /* padding:20px; */
+    border: 2px solid black;
+    background-image:url("https://i.pinimg.com/736x/b5/10/5c/b5105c9dd9b1aad3440b826e178f60a8.jpg");
+    background-size: 100% 100%;
+    transition: transform .2s;
+}
+.Sectwo-img2:hover {
+    transform: scale(1.1); 
+    border:5px solid white;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+/* slider */
+.row-class{
+    display: flex;
+    justify-content: space-evenly;
+}
+#two-div{
+    display:flex;
+    justify-content: space-evenly;
+}
+/* #two-div div{
+    height: 200px;
+    width:30%;
+    border:2px solid black;
+    /* background-image: url("https://www.businessobserverfl.com/sites/default/files/201678_standard.jpeg""); */
+
+/* } */
+ .div1{
+    height: 200px;
+    width:30%;
+    border:2px solid black;
+    background-image: url("https://assets.shopkund.com/media/wysiwyg/home/main-banner-14-12-2021-min.jpg");
+    background-size: 100% 100%; 
+
+transition: transform .2s;
+}
+.div1:hover {
+    transform: scale(1.1);
+    border:5px solid white;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.div2{
+    height: 200px;
+    width:30%;
+    border:2px solid black; 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK9ljC-OOTpWshQbtQ5_lJDHLblEWgyTk4vUkm-Zb7LHWENs6xe518K0q6Pslsx_HC5eQ&usqp=CAU");
+    background-size: 100% 100%; 
+
+transition: transform .2s;
+}
+.div2:hover {
+    transform: scale(1.1);
+    border:5px solid white;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+/* }  */
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 6%; */
+}
+#home::before{
+    content:"";
+    position:absolute;
+    background-image: url("https://s7.favim.com/orig/150820/bag-beautiful-boy-cap-Favim.com-3154417.jpg");
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    /* background-image: 100% 100%; */
+
+
+
+}
+#img{
+    height:400px;
+    width:100%;
+    background-repeat: no-repeat;
+}
+.last{
+    /* height: 200px; */
+    /* width: 200px; */
+    /* background-color: rgba(63, 132, 153, 0.267); */
+    /* border: 2px solid white; */
+    height: 150px;
+    width: 100%;
+    margin-top: 126px;
+    
+}
+
+/* .card-img-top img{ */
+    /* height:30%; */
+    /* background-size: 100% 100%; */
+    /* background-size: cover;  */
+    /* width:100%; */
+    /* min-height:100px; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;  */
+/* } */
+.pp{
+    transition: transform .2s;
+}
+.pp:hover {
+    transform: scale(1.1);
+    border:5px solid white;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
